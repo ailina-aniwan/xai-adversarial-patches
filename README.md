@@ -27,9 +27,9 @@ In Colab you can install requirements with the cell provided in the notebook. Lo
 pip install torch torchvision pillow numpy tqdm kornia
 ```
 
-## How to run (Colab)
+## How to run (Colab) [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ailina-aniwan/xai-adversarial-patches/blob/main/adversarial_attacks_patches.ipynb)
 
-1. Open `adversarial_attacks_patches.ipynb` in Google Colab. [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ailina-aniwan/xai-adversarial-patches/blob/main/adversarial_attacks_patches.ipynb)
+1. Open `adversarial_attacks_patches.ipynb` in Google Colab.
 2. Runtime → Change runtime type → Hardware accelerator → GPU.
 3. Run the install / setup cell to install dependencies (if needed).
 4. Run cells top-to-bottom. Key hyperparameters are near the start (PATCH_SIZE, LR, EPOCHS, TV_WEIGHT). If you use the default sample images the notebook will download them; otherwise, add images to `sample_images/` before running.
