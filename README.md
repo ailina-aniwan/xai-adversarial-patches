@@ -1,6 +1,6 @@
 # AIPI 590 - XAI - Adversarial Patches - *Jellyfish*
 
-This repository contains the Colab/Jupyter notebook and helper files used to create a physical adversarial patch that causes a pretrained ResNet34 (ImageNet) classifier to predict a chosen target class ("jellyfish"). The goal is to produce a printable sticker that reliably induces the target prediction on diverse backgrounds and photographed scenes.
+This repository provides a Colab notebook and supporting files for creating a physical adversarial patch that induces a pretrained ResNet34 (ImageNet) classifier to predict the chosen target label (“jellyfish”). The patch is optimized with randomized geometric and photometric augmentations plus a total-variation regularizer so it remains effective when printed and applied to varied backgrounds or photographed scenes.
 
 ## Contents
 
@@ -9,10 +9,6 @@ This repository contains the Colab/Jupyter notebook and helper files used to cre
 - `sample_images/`: background images used for training (populated by the notebook).
 - `test_images/`: held-out images for evaluation (add your photos here).
 - `README.md`: repository overview and instructions.
-
-## Overview
-
-The notebook follows a targeted adversarial patch approach: a small image patch is optimized so that, when overlaid onto arbitrary backgrounds and photographed, a ResNet34 model with ImageNet weights classifies the resulting scene as the chosen target label. The optimization uses randomized geometric and photometric augmentations and a total-variation regularizer to encourage smooth, printable patches.
 
 ## Requirements
 
